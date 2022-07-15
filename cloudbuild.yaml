@@ -8,11 +8,11 @@ steps:
       echo "branch master"
       if [ ! -z "master" -a -d "gcb/environments/master ]; then
         cd terraform/environments/master
-        echo "run init"
+        echo "run-init"
         terraform init
-        echo "run validate"
+        echo "run-validate"
         terraform validate
-        echo "run plan"
+        echo "run-plan"
         terraform plan -out terraform.plan
         terraform apply -auto-approve terraform.plan
       else
