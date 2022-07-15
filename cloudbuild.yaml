@@ -10,6 +10,7 @@ steps:
     
         terraform validate
 
-        terraform plan -out terraform.plan
+        terraform plan
+        
         terraform apply -auto-approve terraform.plan
       
