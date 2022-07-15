@@ -5,9 +5,9 @@ steps:
   args:
   - '-c'
   - |
-      echo "branch test"
-      if [ ! -z "master" -a -d "gcb/environments/test ]; then
-        cd terraform/environments/test
+      echo "branch master"
+      if [ ! -z "master" -a -d "gcb/environments/master ]; then
+        cd terraform/environments/master
         echo "run init"
         terraform init
         echo "run validate"
