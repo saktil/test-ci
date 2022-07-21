@@ -3,7 +3,6 @@ resource "aws_vpc" "my_vpc" {
 
   tags = {
 
-
   }
 }
 
@@ -13,6 +12,7 @@ resource "aws_subnet" "my_subnet" {
   availability_zone = "us-west-2a"
 
   tags = {
+
 
   }
 }
@@ -36,7 +36,6 @@ resource "aws_instance" "foo" {
     device_index         = 0
   }
   tags = {
-
 
   }
 
