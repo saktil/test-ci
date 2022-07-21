@@ -1,18 +1,14 @@
 steps:
-- id: 'tf plan'
-  name: 'hashicorp/terraform'
+- id: 'tag'
+  name: 'bridgecrew/yor'
   entrypoint: 'sh'
   args:
   - '-c'
   - |
  
-        terraform init
+        yor tag .d . 
     
-        terraform validate
-
-        terraform plan 
-
-        terraform apply -auto-approve 
-
+        yor tag -d . --output cli --output-json-file /hasil.json
+      
      
       

@@ -15,3 +15,7 @@ tag_groups:
       - name: upload-to-gcb
         value:
           default: cloud-build
+
+      - name: tambah-tag
+        value:
+          default: tagnya-nambah
